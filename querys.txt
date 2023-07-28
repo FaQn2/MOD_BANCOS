@@ -1,0 +1,15 @@
+--CREAR TABLA DE POSTGRESQL
+CREATE TABLE bancos
+(
+    denom character varying(250),
+    codigo serial primary key,
+    cod_entidad integer
+)
+
+
+--PARA SABER EL PUERTO DE POSTGRESQL
+SELECT *
+FROM pg_settings
+WHERE name = 'port';
+
+
